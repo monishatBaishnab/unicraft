@@ -10,6 +10,10 @@ export default {
       colors: {
         primary: '#1F2937',
         secondery: '#9CA3AF'
+      },
+      backgroundImage: {
+        'hero': "url('/Gradient.png')",
+        'hero-overlay': "url('/overlay.png')"
       }
     },
   },

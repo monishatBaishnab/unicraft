@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import OutlineButton from "../Shared/Buttons/OutlineButton";
+import Button from "../Shared/Buttons/Button";
 import { FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <div>
+        <div className="absolute left-0 right-0 top-0">
             <div className="container flex items-center justify-between py-5 h-[90px]">
                 <a href="#" className="text-2xl">UniCraft</a>
                 <div className={`
@@ -33,12 +33,12 @@ const Navbar = () => {
                         <li><a className="text-lg" href="#">How it works</a></li>
                         <li><a className="text-lg" href="#">Pricing</a></li>
                         <li><a className="text-lg" href="#">FAQ</a></li>
-                        <li className="md:hidden"><OutlineButton padding='px-4 py-2'>Contact</OutlineButton></li>
+                        <li className="md:hidden"><Button padding='px-4 py-2'>Contact</Button></li>
                     </ul>
                 </div>
                 <div className="flex items-center gap-5">
-                    <OutlineButton display='hidden md:inline-block'>Contact us</OutlineButton>
-                    <OutlineButton handleClick={handleClick} padding={'p-3'} display='inline-block md:hidden'><FaBars className="text-xl" /></OutlineButton>
+                    <Button display='hidden md:inline-block'>Contact us</Button>
+                    <Button handleClick={handleClick} padding={'p-3'} display='inline-block md:hidden'><FaBars className="text-xl" /></Button>
                 </div>
             </div>
         </div>
