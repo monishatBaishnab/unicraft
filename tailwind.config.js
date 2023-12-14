@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {'satoshi': "'Satoshi', sans-serif"},
+      colors: {
+        primary: '#1F2937',
+        secondery: '#9CA3AF'
+      }
+    },
   },
   plugins: [],
 }
