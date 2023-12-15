@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types';
+import {motion} from 'framer-motion';
 
 const Button = ({ padding, display, children, background, handleClick = () => {}, width }) => {
 
     return (
-        <button
+        <motion.button 
+        whileHover={{scale: 1.05}}
+        whileTap={{scale: 1}}
         onClick={() => handleClick()}
         className={`
         ${padding ? padding : 'px-8 py-3'}
@@ -16,7 +19,7 @@ const Button = ({ padding, display, children, background, handleClick = () => {}
         ${width !== undefined ? width : ''}
         `}>
             {children}
-        </button>
+        </motion.button>
     );
 };
 
