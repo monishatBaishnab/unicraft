@@ -8,11 +8,11 @@ import zoom from '../../assets/images/zoom.png';
 
 const Header = () => {
     return (
-        <div className={`bg-hero bg-no-repeat bg-cover`}>
+        <div className={`bg-hero bg-no-repeat bg-cover pt-10`}>
             <div className={`bg-hero-overlay bg-no-repeat bg-cover`}>
                 <div className="container flex flex-col items-center text-center justify-center space-y-14 min-h-[80vh]">
                     <div className="space-y-5">
-                        <h1 className="text-[42px] md:text-[72px]">Elevate Your Presence with Seamless Design and Innovation.</h1>
+                        <h1 className="">Elevate Your Presence with Seamless Design and Innovation.</h1>
                         <p>From strategic planning to digital presence, we are your dedicated partner in achieving solo success.</p>
                         <Button background='bg-primary text-white'>View Pricing</Button>
                     </div>

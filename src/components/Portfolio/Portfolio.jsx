@@ -12,14 +12,19 @@ import Button from '../Shared/Buttons/Button';
 
 const Portfolio = () => {
     return (
-        <div className='max-w-[1920px] pb-20'>
+        <div className='max-w-[1920px] py-20 hidden md:block'>
             <Swiper
                 slidesPerView={'auto'}
                 spaceBetween={30}
                 centeredSlides={true}
                 initialSlide={2}
-                className="projects flex justify-[center_!important]"
+                className="projects"
             >
+                <SwiperSlide className='w-[360px_!important] h-[400px_!important]'>
+                    <div className='w-full h-full'>
+                        <img className='w-full h-full object-cover' src={portfolio3} alt="" />
+                    </div>
+                </SwiperSlide>
                 <SwiperSlide className='w-[360px_!important] h-[400px_!important]'>
                     <div className='w-full h-full'>
                         <img className='w-full h-full object-cover' src={portfolio1} alt="" />
@@ -27,17 +32,12 @@ const Portfolio = () => {
                 </SwiperSlide>
                 <SwiperSlide className='w-[360px_!important] h-[400px_!important]'>
                     <div className='w-full h-full'>
+                        <img className='w-full h-full object-cover' src={portfolio3} alt="" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='w-[360px_!important] h-[400px_!important]'>
+                    <div className='w-full h-full'>
                         <img className='w-full h-full object-cover' src={portfolio2} alt="" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='w-[360px_!important] h-[400px_!important]'>
-                    <div className='w-full h-full'>
-                        <img className='w-full h-full object-cover' src={portfolio3} alt="" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='w-[360px_!important] h-[400px_!important]'>
-                    <div className='w-full h-full'>
-                        <img className='w-full h-full object-cover' src={portfolio3} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='w-[360px_!important] h-[400px_!important]'>
