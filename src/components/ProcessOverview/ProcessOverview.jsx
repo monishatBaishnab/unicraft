@@ -28,7 +28,7 @@ const ProcessOverview = () => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-3">
                     {
-                        process.map(({number, title, desc, arrow, idx }) => <div key={idx} className="flex flex-col items-center text-center relative">
+                        process.map(({number, title, desc, arrow}) => <div key={title} className="flex flex-col items-center text-center relative">
                             <h1 className="bg-gradient-to-t from-white to-[#D8B4FE] bg-clip-text text-transparent font-extrabold text-[140px] -mb-16">{number}</h1>
                             <h3>{title}</h3>
                             <p className="text-secondery px-10">{desc}</p>
