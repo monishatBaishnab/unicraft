@@ -2,6 +2,7 @@ import Header from "./components/Header/Header"
 import Navbar from "./components/Navbar/Navbar"
 import Portfolio from "./components/Portfolio/Portfolio"
 import ProcessOverview from "./components/ProcessOverview/ProcessOverview"
+import Testimonials from "./components/Testimonials/Testimonials"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Portfolio />
       <ProcessOverview />
+      <Testimonials />
     </>
   )
 }
