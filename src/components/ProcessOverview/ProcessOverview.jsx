@@ -1,4 +1,5 @@
 import arrow from '../../assets/images/arrow.png';
+import SectionTitle from '../Shared/SectionTitle/SectionTitle';
 
 const ProcessOverview = () => {
     const process = [
@@ -23,10 +24,8 @@ const ProcessOverview = () => {
     return (
         <div className="mb-10">
             <div className="container border border-[#E5E7EB] rounded-lg shadow-xl shadow-[rgba(28,_25,_23,_0.05)] space-y-10">
-                <div className="flex flex-col items-center text-center space-y-2">
-                    <h2>How it works</h2>
-                    <p>Premium designs, unlimited requests, super fast delivery, for one flat monthly fee.</p>
-                </div>
+                <SectionTitle title='How it works' subTitile='Premium designs, unlimited requests, super fast delivery, for one flat monthly fee.' />
+                
                 <div className="grid grid-cols-1 md:grid-cols-3">
                     {
                         process.map(({number, title, desc, arrow, idx }) => <div key={idx} className="flex flex-col items-center text-center relative">

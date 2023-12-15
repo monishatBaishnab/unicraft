@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Button = ({ padding, display, children, background, handleClick = () => {} }) => {
+const Button = ({ padding, display, children, background, handleClick = () => {}, width }) => {
 
     return (
         <button
@@ -13,6 +13,7 @@ const Button = ({ padding, display, children, background, handleClick = () => {}
         rounded-[8px] 
         transition-[background_,_color] 
         ${background ? background : "hover:bg-primary hover:text-white  focus:bg-primary  focus:text-white  active:bg-primary  active:text-white"}
+        ${width !== undefined ? width : ''}
         `}>
             {children}
         </button>
@@ -25,6 +26,7 @@ Button.propTypes = {
     children: PropTypes.node,
     handleClick: PropTypes.func,
     background: PropTypes.string,
+    width: PropTypes.string,
 }
 
 export default Button;

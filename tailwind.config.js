@@ -13,7 +13,8 @@ export default {
       },
       backgroundImage: {
         'hero': "url('/Gradient.png')",
-        'hero-overlay': "url('/overlay.png')"
+        'hero-overlay': "url('/overlay.png')",
+        'pricing': "url('/pricing.png')"
       }
     },
   },
