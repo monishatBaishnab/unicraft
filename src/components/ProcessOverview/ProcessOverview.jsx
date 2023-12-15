@@ -22,7 +22,7 @@ const ProcessOverview = () => {
         }
     ]
     return (
-        <div className="mb-10">
+        <div className="mb-10 hidden md:block">
             <div className="container border border-[#E5E7EB] rounded-lg shadow-xl shadow-[rgba(28,_25,_23,_0.05)] space-y-10">
                 <SectionTitle title='How it works' subTitile='Premium designs, unlimited requests, super fast delivery, for one flat monthly fee.' />
                 
@@ -33,7 +33,7 @@ const ProcessOverview = () => {
                             <h3>{title}</h3>
                             <p className="text-secondery px-10">{desc}</p>
                             {
-                                arrow && <div className='absolute right-0 bottom-0 top-0 my-auto flex items-center w-20 h-20'>
+                                arrow && <div className='absolute -right-10 bottom-0 top-0 my-auto flex items-center w-20 h-20'>
                                     <img className='w-full h-full object-contain' src={arrow} alt="" />
                                 </div>
                             }
