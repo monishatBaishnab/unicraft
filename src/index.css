@@ -36,6 +36,6 @@
   
   @layer components{
     .container {
-      @apply max-w-screen-xl mx-auto px-5 md:px-10 py-[100px]
+      @apply max-w-screen-xl mx-auto px-5 md:px-10 py-20
     }
   }
