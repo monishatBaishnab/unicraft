@@ -1,3 +1,4 @@
+import Contact from "./components/Contact/Contact"
 import FAQSection from "./components/FAQSection/FAQSection"
 import Header from "./components/Header/Header"
 import Navbar from "./components/Navbar/Navbar"
@@ -17,6 +18,7 @@ function App() {
       <Testimonials />
       <Packages />
       <FAQSection />
+      <Contact />
     </>
   )
 }
